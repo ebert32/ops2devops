@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: studentx-deployment
+  name: student7-deployment
   namespace: student7
 spec:
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: student7
-        image: registry.tanzu.dk/ops2devops/studentx:master
+        image: registry.tanzu.dk/ops2devops/student7:master
         imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -29,5 +29,5 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30010 # Remember to change to student number.
+    nodePort: 30017 # Remember to change to student number.
 
