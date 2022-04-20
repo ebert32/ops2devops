@@ -13,7 +13,8 @@ services:
       MYSQL_PASSWORD: wordpress
     
   wordpress:
-    depends_on:
+    depends_on:docker volume ls
+
       - db
     image: wordpress:latest
     volumes:
